@@ -9,7 +9,7 @@
 
 // Input: 123456789 Output: 987654321
 
-int descendingOrder(int n) {
+int descendingOrder(n) {
   final newVal = '$n'.split('').map((e) => int.parse(e)).toList();
   newVal.sort((a, b) => b - a);
   return int.parse(newVal.join());
@@ -17,4 +17,6 @@ int descendingOrder(int n) {
 
 void main() {
   print(descendingOrder(123456789));
+  print(descendingOrder(42145));
+  print(descendingOrder(145263));
 }
